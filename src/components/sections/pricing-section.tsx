@@ -3,18 +3,29 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Базовый",
+    price: "7 900",
+    period: " руб",
+    description: "Разбор гардероба онлайн",
+    features: [
+      "Видеоконсультация 60 мин",
+      "Аудит текущего гардероба",
+      "Рекомендации по образам",
+      "Список базовых вещей",
+    ],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "Стиль под ключ",
+    price: "19 900",
+    period: " руб",
+    description: "Полное преображение",
+    features: [
+      "Разбор гардероба",
+      "Подбор индивидуального стиля",
+      "Онлайн-шопинг сопровождение",
+      "Подбор образов на 30 дней",
+      "Поддержка в мессенджере",
+    ],
     popular: true,
   },
 ]
@@ -29,8 +40,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Выберите свой формат</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Каждая программа адаптируется под ваши задачи и образ жизни.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +86,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Записаться
               </button>
             </motion.div>
           ))}
