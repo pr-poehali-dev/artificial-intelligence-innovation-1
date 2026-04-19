@@ -101,6 +101,20 @@ export function FeaturesSection() {
           Услуги
         </motion.p>
 
+        {/* Wardrobe image */}
+        <motion.div
+          className="w-full rounded-2xl overflow-hidden mb-6 max-h-[320px]"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <img
+            src="https://cdn.poehali.dev/projects/827bce57-2eb5-42c3-a483-5a3d2fbae521/bucket/83cd260d-6311-4daa-844b-3f561b9d0fb5.jpg"
+            alt="Капсульный гардероб"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Wardrobe Card */}
           <motion.div
