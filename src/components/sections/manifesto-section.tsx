@@ -25,7 +25,7 @@ export function ManifestoSection() {
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
-            src="https://cdn.poehali.dev/projects/827bce57-2eb5-42c3-a483-5a3d2fbae521/files/e4a910ab-dd09-460b-bb65-4954eaf52bd2.jpg"
+            src="https://cdn.poehali.dev/projects/827bce57-2eb5-42c3-a483-5a3d2fbae521/bucket/2082c0b3-a249-4a73-94a7-a8f88e4b4aad.jpg"
             alt="Виктория Боброва"
             className="w-full h-full object-cover"
           />
