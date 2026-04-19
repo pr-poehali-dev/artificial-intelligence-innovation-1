@@ -28,6 +28,28 @@ const plans = [
     ],
     popular: true,
   },
+  {
+    name: "Онлайн шоппинг",
+    price: "1 500",
+    period: " руб",
+    description: "Подбор вещей онлайн под ваш образ",
+    features: [
+      "Анализ вашего стиля",
+      "Подбор вещей в интернет-магазинах",
+      "Готовые ссылки для покупок",
+    ],
+  },
+  {
+    name: "Стилизация съёмок",
+    price: "1 500",
+    period: " руб",
+    description: "Образ для фото и видеосъёмки",
+    features: [
+      "Подбор образа под концепцию съёмки",
+      "Рекомендации по одежде и аксессуарам",
+      "Консультация перед съёмкой",
+    ],
+  },
 ]
 
 export function PricingSection() {
@@ -44,7 +66,7 @@ export function PricingSection() {
           <p className="text-muted-foreground mt-4 max-w-md mx-auto">Каждая программа адаптируется под ваши задачи и образ жизни.</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={i}
